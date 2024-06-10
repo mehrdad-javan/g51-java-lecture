@@ -35,6 +35,19 @@ public class App {
         System.out.println(Car.counter); // Output: 2
 
 
+        System.out.println("-------------------");
+        System.out.println("GenerateRandomNumber: " + NumberGenerator.generateRandomNumber());
+
+        NumberGenerator numberGeneratorObject = new NumberGenerator();
+        numberGeneratorObject.min = 500;
+        numberGeneratorObject.max = 2000;
+        System.out.println("GenerateRandomNumber between 500 - 2000: " + numberGeneratorObject.generateRandomNumberInRange());
+
+        NumberGenerator numberGeneratorObject2 = new NumberGenerator();
+        numberGeneratorObject2.min=5;
+        numberGeneratorObject2.max=20;
+        System.out.println("GenerateRandomNumber between 5 - 20: " + numberGeneratorObject2.generateRandomNumberInRange());
+
 
 
 
